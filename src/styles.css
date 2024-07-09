@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Fonts */
+  --barlow-condensed: "Barlow Condensed", sans-serif;
+  --barlow: "Barlow", sans-serif;
+  --bellefair: "Bellefair", serif;
+  --white: #fff;
+  --light-blue: #D0D6F9;
+  --black: #0B0D17;
+
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-size: 1.6rem;
+  color: var(--white);  
+  height: 100vh;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bellefair);
+  font-weight: 400;
+  margin: 0;
+
+}
+
+p {
+  font-family: var(--barlow);
+}
+
+.subtitle {
+  font-family: var(--barlow-condensed);
+}

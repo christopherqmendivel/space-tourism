@@ -1,0 +1,39 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+
+  left: 0;
+  right: 0;
+  top: 0;
+
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  z-index: 1000;
+}
+.logo {
+  flex: 1;
+}
+
+.list-item-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.list-item-nav li {
+  font-family: var(--barlow-condensed);
+  text-transform: uppercase;
+}
+
+.list-item-nav .link-item {
+  display: flex;
+  color: var(--white);
+}
+
+.number-nav {
+  font-weight: 700;
+  padding-right: 1rem;
+}

@@ -1,0 +1,57 @@
+.container-home {
+  display: flex;
+  align-items: center;
+}
+
+.home,
+.explore {
+  width: 50%;
+}
+
+.home {
+  margin-left: 10rem;
+}
+
+.explore {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
+}
+
+.subtitle {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 14rem;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 1.8rem;
+  max-width: 75%;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27.2rem;
+  height: 27.2rem;
+  background: var(--white);
+  border-radius: 50%;
+  color: var(--black);
+  font-family: var(--bellefair);
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+
+}
+
+.circle:hover {
+  box-shadow: 0px 0px 0px 5rem #9797976b;
+  transition: 0.5s;
+}

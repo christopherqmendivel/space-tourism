@@ -1,15 +1,7 @@
-<header>
-    <nav>
-      <ul>
-        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-        <li><a routerLink="/crew" routerLinkActive="active">Crew</a></li>
-        <li><a routerLink="/destination" routerLinkActive="active">Destination</a></li>
-        <li><a routerLink="/technology" routerLinkActive="active">Technology</a></li>
-      </ul>
-    </nav>
-  </header>
   
-  <main>
+<div class="container" [ngClass]="getRouteClass()">
+  <app-header></app-header>
+  <main class="main-content">
     <router-outlet></router-outlet>
   </main>
-  
+</div>
