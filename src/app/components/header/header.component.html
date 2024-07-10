@@ -6,33 +6,50 @@
     </a>
   </div>
 
+  <!-- BURGUER ICON  -->
+  <!-- BURGER ICON -->
+  <div class="burger-menu" (click)="toggleMenu()">
+    <img
+          [src]="menuOpen
+             ? '/assets/images/shared/icon-close.svg'
+             : 'assets/images/shared/icon-hamburger.svg'"       
+          alt="Menu"
+     />
+  </div>
+
   <!-- LINKS ITEMS -->
-  <nav class="menu-nav">
-    <ul class="list-item-nav">
-      <li>
-        <a class="link-item" routerLink="/home" routerLinkActive="active">
-          <span class="number-nav">00</span> Home
-        </a>
-      </li>
-      <li>
-        <a
-          class="link-item"
-          routerLink="/destination"
-          routerLinkActive="active"
-        >
-          <span class="number-nav">01</span> Destination
-        </a>
-      </li>
-      <li>
-        <a class="link-item" routerLink="/crew" routerLinkActive="active">
-          <span class="number-nav">02</span> Crew
-        </a>
-      </li>
-      <li>
-        <a class="link-item" routerLink="/technology" routerLinkActive="active">
-          <span class="number-nav">03</span> Technology
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <div class="sidebar-menu" [class.active]="menuOpen">
+    <nav class="menu-nav">
+      <ul class="list-item-nav">
+        <li>
+          <a class="link-item" routerLink="/home" routerLinkActive="active">
+            <span class="number-nav">00</span> Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="link-item"
+            routerLink="/destination"
+            routerLinkActive="active"
+          >
+            <span class="number-nav">01</span> Destination
+          </a>
+        </li>
+        <li>
+          <a class="link-item" routerLink="/crew" routerLinkActive="active">
+            <span class="number-nav">02</span> Crew
+          </a>
+        </li>
+        <li>
+          <a
+            class="link-item"
+            routerLink="/technology"
+            routerLinkActive="active"
+          >
+            <span class="number-nav">03</span> Technology
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
