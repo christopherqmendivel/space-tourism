@@ -7,7 +7,7 @@
 .main-content {
   max-width: 144rem;
   margin: 0 auto;
-  padding-top: 13rem;
+  padding-top: 8rem;
 
   flex: 1; 
   display: flex;
@@ -17,7 +17,7 @@
 }
 
 .home-background {
-  background: url("../assets/images/home/background-home-desktop.jpg") no-repeat
+  background: url("../assets/images/home/background-home-mobile.jpg") no-repeat
     center center fixed;
   background-size: cover;
 }
@@ -37,4 +37,36 @@
   background: url("../assets/images/technology/background-technology-desktop.jpg")
     no-repeat center center fixed;
   background-size: cover;
+}
+
+
+/* MEDIA QUERYS */
+
+/* MOBIL */
+@media (min-width: 320px) {
+  
+
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .main-content {
+    padding-top: 13rem;
+  }
+  .home-background {
+    background: url("../assets/images/home/background-home-tablet.jpg") no-repeat
+      center center fixed;
+    background-size: cover;
+  }
+
+}
+
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .home-background {
+    background: url("../assets/images/home/background-home-desktop.jpg") no-repeat
+      center center fixed;
+    background-size: cover;
+  }
 }
