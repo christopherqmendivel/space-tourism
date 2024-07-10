@@ -10,12 +10,18 @@
 
 .home {
   margin-left: 10rem;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: unset;
+  max-width: 80%;
 }
 
 .explore {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 10rem;
+  justify-content: center;
+  margin-right: 0;
 }
 
 .subtitle {
@@ -28,11 +34,17 @@
   text-transform: uppercase;
 }
 
+.title, .subtitle  {
+ margin-bottom: 2rem;
+}
+
 .desc {
   font-size: 1.8rem;
-  max-width: 75%;
+  max-width: 80%;
   line-height: 1.4;
   margin: 0;
+  text-align: center;
+  margin-bottom: 7rem;
 }
 
 .circle {
@@ -48,10 +60,46 @@
   font-size: 3.2rem;
   text-transform: uppercase;
   transition: 0.5s;
-
 }
 
 .circle:hover {
   box-shadow: 0px 0px 0px 5rem #9797976b;
   transition: 0.5s;
+}
+
+/* MEDIA QUERYS */
+
+/* MOBIL */
+@media (min-width: 320px) {
+  .container-home {
+    flex-direction: column;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .container-home {
+    flex-direction: row;
+  }
+  .home {
+    margin-left: 10rem;
+    display: flow-root;
+    width: 50%;
+  }
+
+  .desc {
+    text-align: left;
+    margin-bottom: 0;
+
+  }
+
+  .explore {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+  }
 }
