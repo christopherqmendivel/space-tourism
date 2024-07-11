@@ -1,10 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Destination } from 'src/app/interfaces/Destination.interface';
+import { DataService } from 'src/app/shared/services/data.service';
 
 @Component({
   selector: 'app-destination',
   templateUrl: './destination.component.html',
-  styleUrls: ['./destination.component.css']
+  styleUrls: ['./destination.component.css'],
 })
-export class DestinationComponent {
+export class DestinationComponent implements OnInit {
+  public destinations: Destination[] = [];
+  public selectedDestination: Destination | undefined;
 
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.dataService.getData().subscribe((data) => {
+      this.destinations = data.destinations;
+      this.selectedDestination = this.destinations.length > 0 ? this.destinations[0] : undefined;
+      console.log(this.destinations);
+    });
+  }
+
+  selectDestination(destination: Destination): void {
+    this.selectedDestination = destination;
+  }
 }

@@ -60,6 +60,9 @@ h6 {
 
 p {
   font-family: var(--barlow);
+  font-size: 1.6rem;
+  line-height: 1.4;
+
 }
 
 .subtitle {
@@ -86,4 +89,10 @@ p {
      --line-width: 50%;
      --right-line: 10rem;
    }
+ }
+
+ @media (min-width: 768px) {
+    p {
+      font-size: 1.8rem;
+    }
  }

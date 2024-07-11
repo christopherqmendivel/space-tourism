@@ -13,7 +13,15 @@
   display: flex;
   justify-content: center; 
   align-items: center; 
-  
+}
+
+
+
+
+.destination-background .main-content{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-background {
@@ -23,7 +31,7 @@
 }
 
 .destination-background {
-  background: url("../assets/images/destination/background-destination-desktop.jpg")
+  background: url("../assets/destination/background-destination-desktop.jpg")
     no-repeat center center fixed;
   background-size: cover;
 }

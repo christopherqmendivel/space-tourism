@@ -1,0 +1,103 @@
+.container-destination {
+  display: flex;
+}
+
+.title {
+  font-size: 9.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin: 5rem 0;
+}
+
+.subtitle {
+  display: block;
+  font-size: 2.8rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.detail-info {
+    margin: 0;
+}
+
+.number-title {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+}
+
+.line {
+  border: none;
+  background-color: var(--gray);
+  height: 0.1rem;
+  margin: 4rem 0;
+}
+
+section.image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section.image,
+section.info {
+  width: 50%;
+  
+}
+
+.info {
+    margin: 0 3rem;
+}
+
+.detail-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-info span{
+    text-transform: uppercase;
+}
+
+.detail-info .number{
+    font-size: 2.8rem;
+    font-family: var(--bellefair);
+}
+
+.distance, .travel-days {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.detail-info .subtitle-info {
+    color: var(--light-blue);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+
+.subtitle-info {
+  font-family: var(--barlow-condensed);
+}
+.m-w {
+    max-width: 53.9rem;
+}
+
+.link-destination {
+  display: flex;
+  gap: 3rem;
+  text-transform: uppercase;
+  font-family: var(--barlow-condensed);
+  letter-spacing: .3rem;
+}
+
+.link-destination li {
+  cursor: pointer;
+}
+
+.image-destination {
+  padding-top: 10rem;
+}
+
+

@@ -1,1 +1,45 @@
-<p>destination works!</p>
+<div class="container-destination" *ngIf="selectedDestination">
+  <section class="image">
+    <span class="subtitle">
+      <span class="number-title">01</span> PICK YOUR DESTINATION
+    </span>
+    <img
+      [src]='selectedDestination.images.webp'
+      class="image-destination"
+      [alt]='selectedDestination.name'
+    />
+  </section>
+
+  <section class="info">
+    <div class="m-w" >
+      
+      <div class="destination-menu">
+        <ul class="link-destination">
+          <li 
+              *ngFor="let destination of destinations"
+              (click)="selectDestination(destination)"
+              [class.active]="destination === selectedDestination"
+              
+          >{{ destination.name }}
+          </li>
+        </ul>
+      </div>
+
+      <h1 class="title">{{ selectedDestination.name }}</h1>
+      <p class="detail-info">{{ selectedDestination.description }}</p>
+
+      <hr class="line" />
+
+      <div class="detail-info">
+        <div class="distance">
+          <span class="subtitle-info">avg. distance</span>
+          <span class="number">{{ selectedDestination.distance }}</span>
+        </div>
+        <div class="travel-days">
+          <span class="subtitle-info">Est. travel time</span>
+          <span class="number">{{ selectedDestination.travel }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
