@@ -28,13 +28,18 @@
   background: url("../assets/images/home/background-home-mobile.jpg") no-repeat
     center center fixed;
   background-size: cover;
+  min-height: 100vh;
+  height: auto;
 }
 
 .destination-background {
-  background: url("../assets/destination/background-destination-desktop.jpg")
-    no-repeat center center fixed;
+  background: url("../assets/destination/background-destination-mobile.jpg") no-repeat center center ;
   background-size: cover;
+  min-height: 100vh;
+  height: auto;
 }
+
+
 .crew-background {
   background: url("../assets/images/crew/background-crew-desktop.jpg") no-repeat
     center center fixed;
@@ -75,6 +80,11 @@
   .home-background {
     background: url("../assets/images/home/background-home-desktop.jpg") no-repeat
       center center fixed;
+    background-size: cover;
+  }
+
+  .destination-background {
+    background: url("../assets/destination/background-destination-desktop.jpg") no-repeat center center ;
     background-size: cover;
   }
 }

@@ -10,6 +10,7 @@
   --line-padding: 2rem;
   --line-width: 75%;
   --right-line: 2rem;
+  --blue: #0B0D17;
 
 
 }
@@ -21,8 +22,8 @@ html {
 html, body {
   height: 100%;
   margin: 0;
-
 }
+
 
 *,
 *:before,
@@ -33,7 +34,8 @@ html, body {
 
 body {
   font-size: 1.6rem;
-  color: var(--white);  
+  color: var(--white);
+  background-color: var(--blue);  
 }
 
 ul {
@@ -61,7 +63,7 @@ h6 {
 p {
   font-family: var(--barlow);
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.5;
 
 }
 

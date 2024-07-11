@@ -18,7 +18,6 @@ export class DestinationComponent implements OnInit {
     this.dataService.getData().subscribe((data) => {
       this.destinations = data.destinations;
       this.selectedDestination = this.destinations.length > 0 ? this.destinations[0] : undefined;
-      console.log(this.destinations);
     });
   }
 
