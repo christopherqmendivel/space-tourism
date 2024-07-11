@@ -1,5 +1,6 @@
 .container-destination {
   display: flex;
+
 }
 
 .title {
@@ -90,6 +91,7 @@ section.info {
   text-transform: uppercase;
   font-family: var(--barlow-condensed);
   letter-spacing: .3rem;
+
 }
 
 .link-destination li {

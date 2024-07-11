@@ -10,6 +10,7 @@ import { DataService } from 'src/app/shared/services/data.service';
 export class DestinationComponent implements OnInit {
   public destinations: Destination[] = [];
   public selectedDestination: Destination | undefined;
+  public animate: boolean = false;
 
   constructor(private dataService: DataService) {}
 
@@ -23,5 +24,11 @@ export class DestinationComponent implements OnInit {
 
   selectDestination(destination: Destination): void {
     this.selectedDestination = destination;
+    this.animate = true;
+
+    setTimeout(() => {
+      this.animate = false;
+    }, 850);
   }
+
 }
