@@ -27,23 +27,34 @@
         </ul>
       </div>
 
-      <div 
-        class="anim"
-        [ngClass]="{ 'animate__animated animate__fadeIn' : animate}"  
-      >
-        <h1 class="title">{{ selectedDestination.name }}</h1>
-        <p class="desc-info">{{ selectedDestination.description }}</p>
+      <div class="anim">
+
+        <h1 
+          class="title"
+          [ngClass]="{ 'animate__animated animate__fadeIn' : animate}" 
+        >{{ selectedDestination.name }}</h1>
+
+        <p 
+          class="desc-info"
+          [ngClass]="{ 'animate__animated animate__fadeIn' : animate}"   
+        >{{ selectedDestination.description }}</p>
 
         <hr class="line" />
 
         <div class="detail-info">
           <div class="distance">
             <span class="subtitle-info">avg. distance</span>
-            <span class="number">{{ selectedDestination.distance }}</span>
+            <span
+                class="number"
+                [ngClass]="{ 'animate__animated animate__fadeIn' : animate}" 
+            >{{ selectedDestination.distance }}</span>
           </div>
           <div class="travel-days">
             <span class="subtitle-info">Est. travel time</span>
-            <span class="number">{{ selectedDestination.travel }}</span>
+            <span 
+              class="number"
+              [ngClass]="{ 'animate__animated animate__fadeIn' : animate}" 
+            >{{ selectedDestination.travel }}</span>
           </div>
         </div>
       </div>
