@@ -9,19 +9,16 @@
   margin: 0 auto;
   padding-top: 8rem;
 
-  flex: 1; 
+  flex: 1;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
-.destination-background .main-content{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.destination-background .main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-background {
@@ -33,12 +30,12 @@
 }
 
 .destination-background {
-  background: url("../assets/destination/background-destination-mobile.jpg") no-repeat center center ;
+  background: url("../assets/destination/background-destination-mobile.jpg")
+    no-repeat center center;
   background-size: cover;
   min-height: 100vh;
   height: auto;
 }
-
 
 .crew-background {
   background: url("../assets/images/crew/background-crew-desktop.jpg") no-repeat
@@ -52,13 +49,10 @@
   background-size: cover;
 }
 
-
 /* MEDIA QUERYS */
 
 /* MOBIL */
 @media (min-width: 320px) {
-  
-
 }
 
 /* TABLET */
@@ -67,24 +61,33 @@
     padding-top: 13rem;
   }
   .home-background {
-    background: url("../assets/images/home/background-home-tablet.jpg") no-repeat
-      center center fixed;
+    background: url("../assets/images/home/background-home-tablet.jpg")
+      no-repeat center center fixed;
     background-size: cover;
+    min-height: 100vh;
+    height: auto;
   }
 
+  .destination-background {
+    background: url("../assets/destination/background-destination-tablet.jpg")
+      no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+  }
 }
-
 
 /* DESKTOP */
 @media (min-width: 992px) {
   .home-background {
-    background: url("../assets/images/home/background-home-desktop.jpg") no-repeat
-      center center fixed;
+    background: url("../assets/images/home/background-home-desktop.jpg")
+      no-repeat center center fixed;
     background-size: cover;
   }
 
   .destination-background {
-    background: url("../assets/destination/background-destination-desktop.jpg") no-repeat center center ;
+    background: url("../assets/destination/background-destination-desktop.jpg")
+      no-repeat center center;
     background-size: cover;
   }
 }

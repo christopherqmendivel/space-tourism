@@ -11,7 +11,7 @@
   text-transform: uppercase;
   margin: 5rem 0;
   margin-bottom: 0;
-  font-size: 56px;
+  font-size: 5.6rem;
   text-align: center;
 }
 
@@ -151,6 +151,25 @@ section.image {
 
 /* TABLET */
 @media (min-width: 768px) {
+  section.image .image-destination  {
+    width: 30rem;
+    height: 30rem;
+  }
+  .anim .title {
+    font-size: 8rem;
+  }
+  .detail-info {
+    flex-direction: row;
+  }
+
+  .detail-info  {
+    max-width: unset;
+    justify-content: space-evenly;
+  }
+  .subtitle {
+    transform: translateX(-150%);
+    font-size: 1.8rem;
+  }
 }
 
 /* DESKTOP */
@@ -174,6 +193,10 @@ section.image {
 
   section.image {
     padding: 0;
+  }
+
+  .subtitle {
+    transform: translateX(0);
   }
 
   .subtitle {
@@ -205,8 +228,9 @@ section.image {
 
   .detail-info {
     text-align: left;
-    max-width: 75%;
     gap: 0;
     flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
   }
 }
