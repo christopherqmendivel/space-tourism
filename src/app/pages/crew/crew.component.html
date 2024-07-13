@@ -1,1 +1,31 @@
-<p>crew works!</p>
+<div class="container-crew" *ngIf="selectedCrew">
+  <section class="info">
+    <span class="subtitle">
+      <span class="number-title">02</span> meet your crew
+    </span>
+
+    <div class="container-title-subtitle">
+      <h1 class="title">{{ selectedCrew.name }}</h1>
+      <h2 class="subtitle">{{ selectedCrew.role }}</h2>
+
+      <p>
+       {{ selectedCrew.bio }}
+      </p>
+    </div>
+
+    <ul class="circle-list">
+      <li 
+        *ngFor="let crew of crews"
+        (click)="selecCrew(crew)"
+        [class.active]="crew === selectedCrew"
+
+        >
+      
+    </li>
+    </ul>
+  </section>
+  <section class="image">
+    <img 
+      [src]="selectedCrew.images.webp" alt="Douglas Hurley" />
+  </section>
+</div>
