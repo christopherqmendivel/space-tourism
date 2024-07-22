@@ -23,6 +23,7 @@
 
 
 
+
 .home-background {
   background: url("../assets/images/home/background-home-mobile.jpg") no-repeat
     center center fixed;
@@ -43,6 +44,7 @@
   background: url("../assets/crew/background-crew-mobile.jpg") no-repeat
     center center fixed;
   background-size: cover;
+  height: 100%;
 }
 
 .technology-background {
@@ -50,6 +52,9 @@
     no-repeat center center fixed;
   background-size: cover;
 }
+
+
+
 
 /* MEDIA QUERYS */
 
