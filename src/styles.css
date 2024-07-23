@@ -124,6 +124,10 @@ p {
   display: flex;
  }
 
+ .container.crew-background app-crew {
+    height: 100%;
+ }
+
  @media (min-width: 768px) {
   .crew-background app-crew {
     height: 100%;
@@ -131,6 +135,10 @@ p {
  }
 
  @media (min-width: 992px) {
+  .container.crew-background app-crew {
+    height: auto;
+  }
+  
   section.image,
   section.info {
     width: 45%;
