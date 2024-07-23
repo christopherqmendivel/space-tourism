@@ -101,6 +101,7 @@
 
   .container-crew section.info {
     margin-top: 0;
+    padding-left: 2rem;
   }
 
   .container-crew .info span.subtitle {
