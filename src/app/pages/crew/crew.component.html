@@ -5,10 +5,24 @@
     </span>
 
     <div class="container-title-subtitle">
-      <h1 class="title">{{ selectedCrew.name }}</h1>
-      <h2 class="subtitle">{{ selectedCrew.role }}</h2>
+      <h1 
+      class="title"
+      [ngClass]="{'animate__animated animate__fadeIn' : animate}"
+      >
+        {{ selectedCrew.name }}
+      </h1>
+      <h2 
+        class="subtitle"
+        [ngClass]="{'animate__animated animate__fadeIn' : animate}"
+      >
+        {{ selectedCrew.role }}
+      
+      </h2>
 
-      <p class="info-bio">
+      <p 
+        class="info-bio"
+        [ngClass]="{'animate__animated animate__fadeIn' : animate}" 
+      >
        {{ selectedCrew.bio }}
       </p>
     </div>
@@ -26,6 +40,8 @@
   </section>
   <section class="image">
     <img 
-      [src]="selectedCrew.images.webp" alt="Douglas Hurley" />
+      [src]="selectedCrew.images.webp" alt="Douglas Hurley"
+      [ngClass]="{'animate__animated animate__fadeIn' : animate}"
+    />
   </section>
 </div>

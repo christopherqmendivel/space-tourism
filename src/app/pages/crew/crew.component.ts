@@ -11,6 +11,7 @@ export class CrewComponent implements OnInit {
 
   public crews: Crew[] = [];
   public selectedCrew: Crew | undefined;
+  public animate: boolean = false;
 
   constructor(private dataService: DataService) {}
 
@@ -24,6 +25,11 @@ export class CrewComponent implements OnInit {
 
   selecCrew(crew: Crew):void {
     this.selectedCrew = crew;
+    this.animate = true;
+
+    setTimeout(() => {
+      this.animate = false;
+    }, 850);
   }
 }
 
