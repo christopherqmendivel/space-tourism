@@ -1,1 +1,34 @@
-<p>technology works!</p>
+<div class="container-technology" *ngIf="selectedTechnology">
+  <section class="info">
+    <span class="subtitle">
+      <span class="number-title">02</span> meet your crew
+    </span>
+
+    <div class="container-title-subtitle">
+      <h1 class="title">
+        {{ selectedTechnology.name }}
+      </h1>
+      <h2 class="subtitle">the terminology</h2>
+
+      <p class="info-bio">
+        {{ selectedTechnology.description }}
+      </p>
+    </div>
+    <ul class="circle-list">
+      <li
+        *ngFor="let technology of technologies; let i = index"
+        (click)="selecTechnology(technology)"
+        [class.active]="technology === selectedTechnology"
+      >
+        {{ i + 1 }}
+      </li>
+    </ul>
+  </section>
+  <section class="image">
+    <img
+      class="image"
+      [src]="selectedTechnology.images.portrait"
+      alt="Douglas Hurley"
+    />
+  </section>
+</div>

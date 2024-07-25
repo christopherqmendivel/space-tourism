@@ -1,0 +1,30 @@
+.container-technology {
+  display: flex;
+}
+
+.circle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: max-content;
+}
+
+.circle-list li {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, .4);
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  font-family: var(--bellefair);
+}
+
+.circle-list li.active {
+  color: var(--black);
+  background-color: var(--white);
+}

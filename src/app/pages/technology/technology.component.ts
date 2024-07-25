@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Technology } from 'src/app/interfaces/Technology.interface';
+import { DataService } from 'src/app/shared/services/data.service';
 
 @Component({
   selector: 'app-technology',
@@ -7,4 +9,23 @@ import { Component } from '@angular/core';
 })
 export class TechnologyComponent {
 
-}
+  public technologies: Technology[] = []
+  public selectedTechnology: Technology | undefined;
+
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit() {
+    this.dataService.getData().subscribe( (data) => {
+      this.technologies = data.technology;
+      this.selectedTechnology = this.technologies.length > 0 ? this.technologies[0] : undefined;
+      console.log(this.technologies)
+    })
+  }
+
+  
+
+  selecTechnology(technology: Technology):void {
+    this.selectedTechnology = technology;
+  }
+} 
