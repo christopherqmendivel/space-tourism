@@ -11,6 +11,7 @@ export class TechnologyComponent {
 
   public technologies: Technology[] = []
   public selectedTechnology: Technology | undefined;
+  public animate: boolean = false;
 
 
   constructor(private dataService: DataService) {}
@@ -27,5 +28,10 @@ export class TechnologyComponent {
 
   selecTechnology(technology: Technology):void {
     this.selectedTechnology = technology;
+    this.animate = true;
+
+    setTimeout(() => {
+      this.animate = false;
+    }, 850);
   }
 } 
