@@ -50,6 +50,10 @@
   background-size: cover;
 }
 
+.container.technology-background {
+  padding-top: 10rem;
+}
+
 /* MEDIA QUERYS */
 
 /* MOBIL */

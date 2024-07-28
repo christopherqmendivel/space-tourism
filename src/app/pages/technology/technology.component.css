@@ -1,27 +1,30 @@
 .container-technology {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
 }
 
 .container-technology section.info {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  order: 2;
 }
 
 .container-technology .info .b-1 {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 4rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-technology .info h1.title {
-  font-size: 5.6rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
 }
 
 .container-technology .info h2.subtitle {
-  font-size: 3.2rem;
+  font-size: 1.8rem;
   font-family: var(--bellefair);
   opacity: 0.5;
 }
@@ -29,8 +32,12 @@
 .container-title-subtitle {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   justify-content: space-between;
+  order: 2;
+
+  gap: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 .container-title-subtitle h1.title {
@@ -39,27 +46,38 @@
 
 .container-title-subtitle p.info-bio {
   order: 3;
-  max-width: 93%;
   margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 32.5rem;
 }
 
 .container-title-subtitle span.subtitle {
   position: absolute;
-  top: -8rem;
   left: 0;
   letter-spacing: 0.3rem;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
+  display: block;
+
+  left: 50%;
+  transform: translateX(-50%);
+  top: -8rem;
 }
 
 .circle-list {
   display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  flex-direction: row;
+  order: 1;
+  gap: 1.5rem;
   width: max-content;
+  padding-top: 2rem;
 }
 
 .circle-list li {
-  width: 8rem;
-  height: 8rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -69,7 +87,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.2rem;
+  font-size: 1.8rem;
   font-family: var(--bellefair);
 }
 
@@ -80,12 +98,119 @@
 
 /* SECTION IMAGE */
 .container-technology section.image {
-  display: flex;
-  justify-content: flex-end;
-  max-width: max-content;
+  display: flow-root;
+  max-width: inherit;
 }
 
-.container-technology section.image .image{
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+.container-technology section.image .image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  min-height: 25.8rem;
+  object-fit: cover;
+}
+
+/* MEDIA QUERYS */
+
+/* TABLET */
+@media (min-width: 768px) {
+  .container-technology .info h1.title {
+    font-size: 4rem;
+  }
+  .container-technology .info h2.subtitle {
+    font-size: 2.4rem;
+  }
+
+  .container-title-subtitle p.info-bio {
+    font-size: 1.6rem;
+    max-width: 62%;
+  }
+
+  .container-title-subtitle span.subtitle {
+    padding-left: 6vw;
+    font-size: 2rem;
+    top: -5rem;
+    left: 0;
+    transform: translate(0);
+    text-align: left;
+
+  }
+
+  .circle-list li {
+    width: 5.6rem;
+    height: 5.6rem;
+    font-size: 2.4rem;
+  }
+
+  .container-technology section.image .image {
+    min-height: auto;
+    max-height: initial;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-technology {
+    flex-direction: row;
+  }
+  .container-technology section.info {
+    order: unset;
+    position: relative;
+  }
+  .container-technology section.info .b-1 {
+    flex-direction: row-reverse;
+    align-items: initial;
+    gap: 4rem;
+  }
+
+  .container-technology .info h1.title {
+    font-size: 5.6rem;
+  }
+
+  .container-title-subtitle {
+    margin-top: 0;
+    gap: 0;
+  }
+
+  .container-title-subtitle span.subtitle {
+    font-size: 2.8rem;
+    padding-left: 0;
+    top: -8rem;
+    left: 0;
+    transform: translateX(0);
+  }
+  .container-title-subtitle p.info-bio {
+    font-size: 1.8rem;
+    text-align: left;
+    max-width: 93%;
+  }
+
+  .container-technology section.image {
+    display: flex;
+    justify-content: flex-end;
+    max-width: max-content;
+  }
+
+  .container-technology section.image .image {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .container-title-subtitle {
+    order: unset;
+    align-items: flex-start;
+  }
+
+  .circle-list {
+    gap: 3rem;
+    flex-direction: column;
+    order: unset;
+    padding-top: 0;
+  }
+
+  .circle-list li {
+    width: 8rem;
+    height: 8rem;
+    font-size: 3.2rem;
+  }
 }
