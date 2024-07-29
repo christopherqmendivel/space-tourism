@@ -50,6 +50,7 @@
   font-size: 1.5rem;
   text-align: center;
   max-width: 32.5rem;
+  padding-bottom: 4rem;
 }
 
 .container-title-subtitle span.subtitle {
@@ -134,7 +135,6 @@
     left: 0;
     transform: translate(0);
     text-align: left;
-
   }
 
   .circle-list li {
@@ -183,6 +183,7 @@
     font-size: 1.8rem;
     text-align: left;
     max-width: 93%;
+    padding-bottom: 0;
   }
 
   .container-technology section.image {
@@ -212,5 +213,21 @@
     width: 8rem;
     height: 8rem;
     font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 607px) {
+  .container-title-subtitle span.subtitle {
+    font-size: 2rem;
+    top: -2rem;
+  }
+
+  .container-technology section.image {
+    width: auto;
+  }
+
+  .container-technology section.image .image {
+    width: 48rem;
+    max-height: 45rem;
   }
 }

@@ -119,4 +119,7 @@
       no-repeat center center fixed;
     background-size: cover;
   }
+  .container.technology-background {
+    padding-top: 0;
+  }
 }
