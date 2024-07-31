@@ -217,9 +217,17 @@
 }
 
 @media (max-width: 1366px) and (max-height: 641px) {
+  .container-technology {
+    justify-content: space-between;
+  }
+
   .container-title-subtitle span.subtitle {
     font-size: 2rem;
     top: -2rem;
+  }
+
+  .container-technology section.info {
+    transform: translateX(35%);
   }
 
   .container-technology section.image {
